@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detected Drone Output</title>
+    <style>
+        body {
+            background-image: url('../static/images/Drone.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+      color: #e60b0b;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    h2 {
+      color: #2ce210;
+      text-align: center;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+        .output {
+            max-width: 50%;
+            max-height: 50%;
+            overflow: visible; /* Prevent image or video from overflowing */
+        }
+
+        .output img,
+        .output video {
+            max-width: 100%; /* Set media width to 100% of container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any default inline styling */
+            margin: 0 auto; /* Center the media horizontally */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="output">
+        <h1>Unmanned Aerial Vehicle Detection</h1>
+        {% if image_url %}   
+            <h2>Predicted image:</h2>
+            <img src="{{ image_url }}" alt="Detected Drone">
+        {% elif video_url %}
+            <h2>Predicted video:</h2>
+            <video controls autoplay>
+                <source src="{{ video_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+/* Button styles */
+.w3-button {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Button hover effects */
+.w3-button:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-left {
+    float: left;
+}
+
+.logo {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-right {
+    float: right;
+}
+
+.get-started {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.subheading {
+    font-size: 18px;
+    color: #777;
+}
+
+#get-help {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.options {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.options h2 {
+    margin: 0;
+}
+
+.option-buttons {
+    margin-top: 20px;
+}
+
+.option-buttons button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+#about {
+    background-image: url('static/images/img4.jpg');
+    background-size: cover;
+    opacity: 0.1; /* Adjust the opacity value as needed */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the header with image */
+  .bgimg {
+    background-image: url('static\images\img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust the height as needed */
+    position: relative;
+    opacity: 0.5; /* Adjust the opacity value as needed */
+}
+
+/* Additional styles for text */
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-text h1 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle text shadow */
+}
+
+.header-text p {
+    color: white;
+    font-size: 1.5em;
+}
+.center {
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    height: 100vh; /* Set the height of the container */
+    background-color: black; /* Just for visualization */
+}
+
+/* Additional styles for the white text */
+h1 {
+    color: white;
+}

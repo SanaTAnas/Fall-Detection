@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fall Detection and Alerting for Elderly People</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Local W3.CSS -->
+    <link rel="stylesheet" href="w3.css">
+    <style>
+        /* Add custom styles here */
+    </style>
+</head>
+<body class="w3-content">
+
+<div class="w3-row">
+    <div class="w3-half w3-black w3-container w3-center" style="height:100vh; position: relative;">
+        <img src="static/images/img3.jpg" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; opacity: 0.5;">
+        <div class="w3-padding-64" style="position: relative; z-index: 1;">
+            <div class="center">
+                <h1>Fall Detection</h1>
+            </div>
+            
+        </div>
+        <div class="w3-padding-32 w3-margin-top" style="position: relative; z-index: 1;">
+            <div class="w3-bar">
+                <a href="#home" class="w3-button w3-hover-blue-grey w3-round-large w3-margin-right" style="background-color: transparent;">Home</a>
+                <a href="#about" class="w3-button w3-hover-teal w3-round-large w3-margin-right" style="background-color: transparent;">About</a>
+                <a href="#services" class="w3-button w3-hover-dark-grey w3-round-large w3-margin-right" style="background-color: transparent;">Services</a>
+                <a href="#alert" class="w3-button w3-hover-brown w3-round-large" style="background-color: transparent;">Emergency Alert</a>
+            </div>
+        </div>
+        <br>        
+        
+        <style>
+            /* Add custom styles here */
+            .w3-button {
+                width: 100%;
+                font-size: 18px;
+                background-color: #42494d; /* Dark ash color */
+                color: white;
+                margin-bottom: 10px; /* Space between buttons */
+            }
+        
+            .w3-accordion-content {
+                display: none; /* Hide the description by default */
+                padding: 0 20px;
+            }
+            .modelButton {
+                padding: 10px 20px;
+                margin: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: #fff;
+                cursor: pointer;
+            }
+            .modelButton.selected {
+                background-color: #dc3545;
+            }
+        </style>
+        
+        <div class="w3-padding-32 w3-margin-top" style="position: relative; z-index: 1;">
+            <div class="w3-bar">
+                <div class="w3-margin-bottom">
+                    <button onclick="toggleAccordion('accordion1')" class="w3-button w3-hover-blue-grey w3-round-large">What We've Done</button>
+                    <div id="accordion1" class="w3-accordion-content">
+                        <p style="font-weight: bold; text-align: justify; padding: 0 20px;">Our project focuses on swiftly detecting falls among the elderly, ensuring timely assistance and mitigating fall-related risks. Computer vision-based systems utilize cameras and image processing algorithms to continuously monitor environments for signs of falls or accidents.</p>
+                    </div>
+                </div>
+                <div class="w3-margin-bottom">
+                    <button onclick="toggleAccordion('accordion2')" class="w3-button w3-hover-blue-grey w3-round-large">Who We Care For</button>
+                    <div id="accordion2" class="w3-accordion-content">
+                        <p style="font-weight: bold; text-align: justify; padding: 0 20px;">We primarily aim to safeguard the well-being of elderly individuals who are at risk of falls and require continuous monitoring for their safety.</p>
+                    </div>
+                </div>
+                <div class="w3-margin-bottom">
+                    <button onclick="toggleAccordion('accordion3')" class="w3-button w3-hover-blue-grey w3-round-large">Our Aim</button>
+                    <div id="accordion3" class="w3-accordion-content">
+                        <p style="font-weight: bold; text-align: justify; padding: 0 20px;">Our aim is to provide accurate and non-invasive monitoring, potentially reducing response times, improving quality of life, and alleviating the burden on caregivers and healthcare providers.</p>
+                    </div>
+                </div>
+                <div class="w3-margin-bottom">
+                    <button onclick="toggleAccordion('accordion4')" class="w3-button w3-hover-blue-grey w3-round-large">Our Objective</button>
+                    <div id="accordion4" class="w3-accordion-content">
+                        <p style="font-weight: bold; text-align: justify; padding: 0 20px;">Our objective is to revolutionize elderly care by utilizing cutting-edge computer vision technology for fall detection.</p>
+                    </div>
+                </div>
+                <div class="w3-margin-bottom">
+                    <button onclick="toggleAccordion('accordion5')" class="w3-button w3-hover-blue-grey w3-round-large">How Fast Response Is Given</button>
+                    <div id="accordion5" class="w3-accordion-content">
+                        <p style="font-weight: bold; text-align: justify; padding: 0 20px;">Our system ensures swift detection of falls, enabling timely assistance to elderly individuals in need.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <script>
+            function toggleAccordion(accordionId) {
+                var accordion = document.getElementById(accordionId);
+                if (accordion.style.display === "block") {
+                    accordion.style.display = "none";
+                } else {
+                    accordion.style.display = "block";
+                }
+            }
+        </script>
+    
+        
+    </div>
+</div>
+
+<style>
+    .grey-button {
+        background-color: #2a2727;
+        color: #ffffff; /* Text color */
+    }
+    .button-container {
+            text-align: center; /* Center the content horizontally */
+        }
+        .button-box{
+            background-color: #42494d;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 20px;
+        }
+
+</style>
+<div class="w3-half w3-blue-grey w3-container" style="height:100vh; position: relative;" id="about">
+    <img src="static/images/img4.jpg" alt="Fall Detection Image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5;">
+    <div class="w3-padding-64 w3-center" style="position: relative; z-index: 1;">
+        <h1>About Fall Detection</h1>
+        <p>Fall detection is an essential system designed to detect and alert caregivers or emergency services when an elderly person experiences a fall. Our system utilizes advanced computer vision algorithms to analyze video streams and detect falls accurately and promptly.</p>
+        
+        <!-- Centered box containing only buttons -->
+        <div class="button-container" style="display: flex; justify-content: center;">
+            <div class="button-box" >
+                <!-- Model buttons and start button with grey color -->
+                <button type="button" class="modelButton grey-button" value="model1">Model 1</button>&emsp;
+                <button type="button" class="modelButton grey-button" value="model2">Model 2</button>&emsp;
+                <button type="button" class="modelButton grey-button" value="model3">Model 3</button>&emsp;
+                <br><br>
+                <div class="button-container">
+                    <!-- Start button -->
+                    <button id="startButton" class="grey-button">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+    <!-- Webcam option and select folder -->
+    <br>
+    <div class="button-container" style="display: flex; justify-content: center;">
+        <button id="webcamButton" style="display: none;" class="modelButton grey-button" value="webcam">Use Webcam</button>
+    </div>
+    <br>
+    <div id="status"></div>
+    <form action="/" method="post" enctype="multipart/form-data" class="form-container">
+        <div class="button-container" style="display: flex; justify-content: center;">
+            <input type="file" id="video" name="video" style="display: none;" accept="video/*">
+            <button type="submit" id="upload" style="display: none;" class="grey-button">Upload</button>   
+            <input type="hidden" name="selected_model" id="selectedModelInput">  
+        </div>           
+    </form>
+    <div id="status"></div> 
+</div>
+</div>
+    
+<!-- Second Grid: Services -->
+<div class="w3-row" id="services">
+    <div class="w3-half w3-dark-grey w3-container w3-center" style="height:100vh; position: relative; z-index: 1;">
+
+        <div style="background-image: url('static/images/img2.jpg'); background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.5;"></div>
+        <div class="w3-padding-64" style="position: relative; z-index: 1;">
+            <h2>Our Services</h2>
+            <p>Discover what we offer.</p>
+            <h3>Data Safety</h3>
+            <ul style="text-align: left;">
+                <li>The developer says that this app doesn't collect or share any user data.</li>
+                <li>No data shared with third parties.</li>
+                <li>No data collected.</li>
+            </ul>
+            <h3>Security Practices</h3>
+            <ul style="text-align: left;">
+                <li>Data is encrypted in transit.</li>
+                <li>You can request that data be deleted.</li>
+            </ul>
+        </div>
+        <br>
+        <p>Explore our cutting-edge technology for fall detection.</p>
+    </div>
+</div>
+
+<!-- More Information Sections (Detailed Explanations) -->
+<div id="detailed_explanation" style="display:none;">
+    <div class="w3-container w3-card w3-white" id="detailed_content">
+        <p id="data_safety_content" style="display: none;">Understand & review app data safety practices: The Data safety section of an app listing lets developers describe how their apps collect, share, and handle different types of data. Developers explain their practices for:</p>
+        <ul style="text-align: left;" id="data_safety_details" style="display: none;">
+            <li>Data collection: Developers describe the types of user data their app collects, how they use this data, and whether the collection of this data is optional. Data is generally considered “collected” when the developer uses their app to retrieve data off your device.</li>
+            <li>Data sharing: Developers describe if their app shares your data with third parties and what types of data are shared. Data is generally considered "shared" when it is accessed by the app and transferred to a third party.</li>
+            <li>In some cases, developers do not need to disclose data as "collected" even if the data technically leaves your device (for example, when the data is only processed ephemerally). Learn more about these cases below.</li>
+            <li>In some cases, developers do not need to disclose data as "shared" even if it's technically transferred to another party (for example, when you give your consent to transfer the data after the app explains how it will use the data, or when the data is shared with a developer’s service provider).</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function showDataSafetyDetails() {
+        var detailedContent = document.getElementById("detailed_content");
+        var dataSafetyContent = document.getElementById("data_safety_content");
+        var dataSafetyDetails = document.getElementById("data_safety_details");
+
+        if (dataSafetyContent.style.display === "none") {
+            dataSafetyContent.style.display = "block";
+            dataSafetyDetails.style.display = "block";
+            detailedContent.style.display = "block";
+        } else {
+            dataSafetyContent.style.display = "none";
+            dataSafetyDetails.style.display = "none";
+            detailedContent.style.display = "none";
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get all model buttons
+        var modelButtons = document.querySelectorAll(".modelButton");
+
+        // Add click event listener to each model button
+        modelButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                // Remove 'selected' class from all model buttons
+                modelButtons.forEach(function(btn) {
+                    btn.classList.remove('selected');
+                });
+
+                // Add 'selected' class to the clicked button
+                this.classList.add('selected');
+
+                var selectedModel = this.value;
+                // Set the value of the hidden input field to the selected model
+                document.getElementById("selectedModelInput").value = selectedModel;
+            });
+        });
+    });
+    function showVideoOptions() {
+        document.getElementById("webcamButton").style.display = "inline-block";
+        document.getElementById("startButton").style.display = "inline-block";
+        document.getElementById("video").style.display = "inline-block";
+        document.getElementById("upload").style.display = "inline-block";
+    }
+
+    // Event listener for the "Start" button click
+    document.getElementById("startButton").addEventListener("click", showVideoOptions);
+
+    // Event listener for the model buttons
+    document.addEventListener("DOMContentLoaded", function() {
+        var modelButtons = document.querySelectorAll(".modelButton");
+
+        modelButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                modelButtons.forEach(function(btn) {
+                    btn.classList.remove('selected');
+                });
+
+                this.classList.add('selected');
+                var selectedModel = this.value;
+                document.getElementById("selectedModelInput").value = selectedModel;
+            });
+        });
+    });
+
+</script>
+
+
+<!-- Third Grid: Emergency Alert -->
+<div class="w3-row" id="alert" style="position: relative;">
+    <div style="background-image: url('static/images/img1.jpg'); background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.5;"></div>
+    <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px; position: relative; z-index: 1;">
+        <div class="w3-padding-64">
+            <h1>Emergency Alert</h1>
+          </div>
+          <div class="w3-container w3-card-4 w3-gray w3-padding-32" style="max-width: 400px; margin: auto;">
+              <h2>Contact Information</h2>
+              <p class="w3-text-grey">For immediate assistance, please contact:</p>
+              <div class="w3-row w3-margin-top">
+                  <div class="w3-col" style="width:50%;"><p><strong>Name:</strong> Robert Smit</p></div>
+                  <div class="w3-col" style="width:50%;"><p><strong>Email:</strong> sanatanas2580@gmail.com</p></div>
+              </div>
+              <div class="w3-row">
+                  <div class="w3-col" style="width:50%;"><p><strong>Mobile Number:</strong> 91234567890</p></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-black w3-padding-16">
+      <p>Powered by SANA</p>
+  </footer>
+  <!-- Include jQuery for AJAX requests -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+      // Function to handle webcam button click
+      $("#webcamButton").click(function() {
+          $.get("/process_webcam_video", function(data, status) {
+              $("#status").html("Webcam video processing initiated.");
+          });
+      });
+  
+      // Function to handle upload button click
+      $("#uploadButton").click(function() {
+          $.get("/process_uploaded_video", function(data, status) {
+              $("#status").html("Uploaded video processing initiated.");
+          });
+      });
+  </script>
+  </body>
+  </html>
